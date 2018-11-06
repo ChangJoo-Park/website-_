@@ -837,7 +837,7 @@ You can find the source for this example,
 [animate5,](https://raw.githubusercontent.com/flutter/website/master/src/_includes/code/animation/animate5/main.dart)
 on GitHub.
 
-## Next steps
+## 다음 단계로s
 
 This tutorial gives you a foundation for creating animations in Flutter
 using Tweens, but there are many other classes to explore.

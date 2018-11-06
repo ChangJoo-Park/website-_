@@ -9,7 +9,7 @@ next:
 
 {% assign os = 'linux' -%}
 
-## System requirements
+## 시스템 요구사항
 
 To install and run Flutter, your development environment must meet these minimum requirements:
 
@@ -26,6 +26,6 @@ To install and run Flutter, your development environment must meet these minimum
 
 {% include_relative _android-setup.md %}
 
-## Next step
+## 다음 단계로
 
 [Next step: Configure Editor](/get-started/editor)

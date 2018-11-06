@@ -84,7 +84,7 @@ VS Code is a light-weight editor with Flutter app execution and debug support.
 
 </div>{% comment %} End: Tab panes. {% endcomment -%}
 
-## Next step
+## 다음 단계로
 
 Take Flutter for a test drive: create a first project, run it, and experience
 "hot reload".

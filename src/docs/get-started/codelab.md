@@ -542,7 +542,7 @@ at the following link to get back on track.
 
 * [lib/main.dart]({{site.codelab-code-url}}/startup_namer/4_end_of_infinite_list/lib/main.dart)
 
-## Next steps
+## 다음 단계로s
 {:.no_toc}
 
 {% include app-figure.md

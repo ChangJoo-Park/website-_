@@ -34,6 +34,6 @@ Flutter apps.
   {% include_relative _terminal.md %}
 </div>
 
-## Next step
+## 다음 단계로
 
 You'll next learn some core Flutter concepts by creating a small app.
