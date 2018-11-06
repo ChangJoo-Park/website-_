@@ -6,7 +6,7 @@ next:
 toc: false
 ---
 
-Select the operating system on which you are installing Flutter:
+Flutter를 개발하려는 운영체제를 선택하세요.
 
 <div class="card-deck mb-8">
 {% for os in site.os-list %}
@@ -20,8 +20,4 @@ Select the operating system on which you are installing Flutter:
   </a>
 {% endfor %}
 </div>
-
-{{site.alert.important}}
-  If you're in China, first read [Using Flutter in China](/community/china).
-{{site.alert.end}}
 
