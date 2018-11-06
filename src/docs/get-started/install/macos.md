@@ -14,7 +14,7 @@ Flutter를 설치하고 실행하기 위해 아래의 최소 개발환경 요구
 
 - **운영체제**: macOS (64-bit)
 - **디스크 잔여 공간**: 700 MB (IDE나 기타 개발도구 제외).
-- **Tools**: Flutter를 사용하는 환경에 따라 다른 개발 도구가 필요합니다.
+- **개발 도구**: Flutter를 사용하는 환경에 따라 다른 개발 도구가 필요합니다.
   - `bash`, `mkdir`, `rm`, `git`, `curl`, `unzip`, `which`
 
 {% include_relative _get-sdk.md %}
