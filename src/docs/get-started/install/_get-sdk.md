@@ -6,16 +6,17 @@
   {% assign file_ext = '.zip' -%}
 {% endif -%}
 
-## Get the Flutter SDK {#get-sdk}
+## Flutter SDK 내려받기 {#get-sdk}
 
- 1. Download the following installation bundle to get the latest beta release of the
-    Flutter SDK:
+ 1. 아래에서 가장 최신에 릴리즈된 Flutter SDK를 내려받으세요.
 
     [(loading...)](#){:.download-latest-link-{{os}}.btn.btn-primary}
 
-    For other release channels, and older builds, see the [SDK
-    archive](/docs/development/tools/sdk/archive) page.
- 1. Extract the file in the desired location, 사용 예:
+    다른 릴리즈 버전이나 이전 버전 빌드를 받으려면 [SDKarchive](/docs/development/tools/sdk/archive) 페이지를 방문하세요.
+
+ 1. 원하는 경로에 압축을 풀어주세요.
+    
+    사용 예:
 
     {% comment %}
       Our JS also updates the filename in this template, but it doesn't include the terminal formatting:
@@ -31,33 +32,27 @@
     $ {{unzip}} ~/Downloads/flutter_{{os}}_vX.X.X-beta{{file_ext}}
     ```
 
- 1. Add the `flutter` tool to your path:
+ 1. `flutter` 도구를 PATH에 추가하세요
 
     ```terminal
     $ export PATH=$PATH:`pwd`/flutter/bin
     ```
 
-The above command sets your `PATH` variable temporarily, for the current terminal
-window. To permanently add Flutter to your path, see [Update your
-path](#update-your-path).
+위 명령어를 입력하면 `PATH` 환경변수에 현재 터미널 윈도우에 한하여 임시로 추가됩니다. 지속적으로 추가하려면 [경로 설정](#update-your-path)을 확인하세요.
 
-You are now ready to run Flutter commands!
+이제 Flutter 명령어를 쓸 수 있습니다!
 
-To update an existing version of Flutter, see [Upgrading Flutter](/docs/development/tools/sdk/upgrading).
+현재 사용중인 버전을 업데이트하려면, [Flutter 업그레이드](/docs/development/tools/sdk/upgrading)를 참조하세요.
 
-### Run flutter doctor
+### `flutter doctor` 실행하기
 
-Run the following command to see if there are any dependencies you need to
-install to complete the setup:
+다음 명령어를 이용해 설치를 마무리하세요.
 
 ```terminal
 $ flutter doctor [-v]
 ```
 
-This command checks your environment and displays a report to the terminal
-window. The Dart SDK is bundled with Flutter; it is not necessary to install
-Dart separately. Check the output carefully for other software you may need to
-install or further tasks to perform (shown in **bold** text).
+이 명령어는 현재 환경에서 Flutter 설치 상태 리포트를 보여줍니다. 추가로 설치할 소프트웨어가 있는지 확인하고 추가 작업을 해야합니다. (**굵은** 텍스트 참조).
 
 사용 예:
 
@@ -69,10 +64,6 @@ install or further tasks to perform (shown in **bold** text).
       visit https://flutter.io/setup/#android-setup for detailed instructions.
 </pre>
 
-The following sections describe how to perform these tasks and finish the setup
-process.
-
-Once you have installed any missing dependencies, run the `flutter doctor`
-command again to verify that you’ve set everything up correctly.
+`flutter doctor` 를 이용해 설치 프로세스를 완료하는 방법을 알려줍니다. 
 
 {% include_relative _analytics.md %}
