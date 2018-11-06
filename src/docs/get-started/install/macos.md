@@ -10,22 +10,20 @@ next:
 
 ## 시스템 요구사항
 
-To install and run Flutter, your development environment must meet these minimum requirements:
+Flutter를 설치하고 실행하기 위해 아래의 최소 개발환경 요구사항을 충족해야합니다.
 
-- **Operating Systems**: macOS (64-bit)
-- **Disk Space**: 700 MB (does not include disk space for IDE/tools).
-- **Tools**: Flutter depends on these command-line tools being available in your environment.
+- **운영체제**: macOS (64-bit)
+- **디스크 잔여 공간**: 700 MB (IDE나 기타 개발도구 제외).
+- **Tools**: Flutter를 사용하는 환경에 따라 다른 개발 도구가 필요합니다.
   - `bash`, `mkdir`, `rm`, `git`, `curl`, `unzip`, `which`
 
 {% include_relative _get-sdk.md %}
 
 {% include_relative _path-mac-linux.md %}
 
-## Platform setup
+## 플랫폼 설치
 
-MacOS supports developing Flutter apps for both iOS and Android. Complete at
-least one of the two platform setup steps now, to be able to build and run your
-first Flutter app.
+MacOS에서는 Flutter를 사용하여 iOS와 안드로이드 앱을 모두 개발할 수 있습니다. 두 플랫폼 중 적어도 한 플랫폼은 설치되어있어야 첫번째 Flutter앱을 빌드하거나 실행할 수 있습니다. 
 
 {% include_relative _ios-setup.md %}
 
@@ -33,4 +31,4 @@ first Flutter app.
 
 ## 다음 단계로
 
-[Next step: Configure Editor](/get-started/editor)
+[다음 단계: 에디터 설정](/get-started/editor)
