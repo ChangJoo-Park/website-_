@@ -1,48 +1,41 @@
-## iOS setup
+## iOS 설치하기
 
-### Install Xcode
+### Xcode 설치
 
-To develop Flutter apps for iOS, you need a Mac with Xcode 9.0 or newer:
+iOS를 위한 Flutter 앱 개발을 위해 Xcode 9.0 이상을 지원하는 Mac이 필요합니다.
 
- 1. Install Xcode 9.0 or newer (via [web download](https://developer.apple.com/xcode/) or
-    the [Mac App Store](https://itunes.apple.com/us/app/xcode/id497799835)).
- 1. Configure the Xcode command-line tools to use the newly-installed version of Xcode by
-    running the following from the command line:
-
+ 1. Xcode 9.0 버전 이상을 설치합니다. [웹에서 다운로드](https://developer.apple.com/xcode/) 또는 [Mac App Store](https://itunes.apple.com/us/app/xcode/id497799835)를 이용하세요.
+ 1. 새 버전 Xcode를 설치했다면 Xcode command-line tools를 설정하세요.
     ```terminal
     $ sudo xcode-select --switch /Applications/Xcode.app/Contents/Developer
     ```
 
-    This is the correct path for most cases, when you want to use the latest version of Xcode.
-    If you need to use a different version, specify that path instead.
- 1. Make sure the Xcode license agreement is signed by either opening Xcode once and confirming or
-    running `sudo xcodebuild -license` from the command line.
+    최신 버전 Xcode를 설치했다면 대부분의 경우에 올바른 경로입니다.
+    다른 버전을 사용한다면 해당 경로로 변경해야합니다.
 
-With Xcode, you’ll be able to run Flutter apps on an iOS device or on the simulator.
+ 1. Xcode 라이센스 동의를 하려면 Xcode를 실행하거나 터미널에서 `sudo xcodebuild -license` 를 입력하세요.
 
-### Set up the iOS simulator
+Xcode를 이용하면 Flutter 앱을 iOS 디바이스 또는 시뮬레이터에서 실행할 수 있습니다.
 
-To prepare to run and test your Flutter app on the iOS simulator, follow these steps:
+### iOS 시뮬레이터 설정하기
 
- 1. On your Mac, find the Simulator via Spotlight or by using the following command:
+Flutter 앱을 iOS 시뮬레이터에서 실행하고 테스트하기 위해 아래 과정이 필요합니다.
 
+ 1. Mac에서 Spotlight 또는 아래 명령어로 시뮬레이터를 실행하세요.
     ```terminal
     $ open -a Simulator
     ```
 
- 2. Make sure your simulator is using a 64-bit device (iPhone 5s or later) by checking the settings
-    in the simulator's **Hardware > Device** menu.
- 3. Depending on your development machine's screen size, simulated high-screen-density iOS devices
-    may overflow your screen. Set the device scale under the **Window > Scale** menu in the simulator.
- 4. Start your app by running `flutter run`.
+ 2. 아이폰 5s 이후의 디바이스에서 64비트로 실행하기 위해 시뮬레이터의 **Hardware > Device** 메뉴를 선택합니다.
+ 3. 개발하는 디바이스의 화면 크기에 따라 시뮬레이터가 화면보다 클 수 있습니다 **Window > Scale** 메뉴에서 조정하세요.
+ 4. `flutter run` 명령어로 앱을 실행하세요.
 
-### Deploy to iOS devices
+### iOS 디바이스에 배포하기
 
-To deploy your Flutter app to a physical iOS device, you’ll need some additional tools and an Apple account. You'll also need to set up physical device deployment in Xcode.
+Flutter 앱을 실제 iOS 디바이스에 배포하기 위해 몇개의 추가 도구와 애플 계정이 필요합니다.
 
- 1. Install [homebrew](http://brew.sh/).
- 1. Open the terminal and run these commands to install the tools for deploying Flutter apps to
-    iOS devices.
+ 1. [homebrew](http://brew.sh/)를 설치하세요.
+ 1. 터미널을 열어 아래의 명령어를 실행하세요
 
     ```terminal
     $ brew update
@@ -54,46 +47,32 @@ To deploy your Flutter app to a physical iOS device, you’ll need some addition
     $ pod setup
     ```
 
-   If any of these commands fails with an error, run `brew doctor` and follow the instructions
-   for resolving the issue.
+   실행하는데 오류가 발생하면 `brew doctor` 명령어로 해결할 수 있습니다.
 
- 1. Follow the Xcode signing flow to provision your project:
+ 1. Xcode 사이닝 절차를 따라가면 프로젝트를 프로비저닝할 수 있습니다.
 
      {: type="a"}
 
-     1. Open the default Xcode workspace in your project by running `open
-        ios/Runner.xcworkspace` in a terminal window from your Flutter project
-        directory.
-     1. In Xcode, select the `Runner` project in the left navigation panel.
-     1. In the `Runner` target settings page, make sure your Development Team is
-        selected under **General > Signing > Team**. When you select a team,
-        Xcode creates and downloads a Development Certificate, registers your
-        device with your account, and creates and downloads a provisioning
-        profile (if needed).
+     1. Xcode 워크스페이스를 열고 `ios/Runner.xcworkspace` 를 터미널에서 실행하세요.
+     1. Xcode에서 `Runner` 프로젝트를 왼쪽 네비게이션 패널에서 선택하세요.
+     1. `Runner` 타겟 설정 페이지에서 Development Team이  **General > Signing > Team** 에 있는지 확인하세요.
+        팀을 선택하면 Xcode는 계정에 할당된 개발자 인증서를 만들고 내려받습니다. 그리고 필요한 경우 프로필 프로비저닝을 합니다.
 
-        * To start your first iOS development project, you may need to sign into
-          Xcode with your Apple ID.
+        * 첫번째 iOS 개발 프로젝트를 한다면 Xcode에서 애플 ID로 로그인 해야합니다.
           <br>
           ![Xcode account add](/images/setup/xcode-account.png)
           <br>
-          Development and testing is supported for any Apple ID. Enrolling in the
-          Apple Developer Program is required to distribute your app to the App
-          Store. View the [differences between Apple membership][].
+          개발과 테스트에는 애플 ID가 필요합니다. 애플 개발자 프로그램에 등록되어 있어야합니다.
+          [맴버십 선택하기](https://developer.apple.com/kr/support/compare-memberships/)를 확인하세요.
 
-        * The first time you use an attached physical device for iOS
-          development, you will need to trust both your Mac and the Development
-          Certificate on that device. Select `Trust` in the dialog prompt when
-          first connecting the iOS device to your Mac.
+        * 처음 실제 iOS 디바이스를 연결하면 인증 다이얼로그가 출력됩니다. `신뢰함` 을 선택하세요.
 
           ![Trust Mac](/images/setup/trust-computer.png)
 
-          Then, go to the Settings app on the iOS device, select **General > Device Management** and trust your Certificate.
+          이제 iOS 기기의 설정에서 **일반 > 기기 관리** 에서 신뢰한 앱 목록을 확인할 수 있습니다.
 
-        * If automatic signing fails in Xcode, verify that the project's
-          **General > Identity > Bundle Identifier** value is unique.
+        * 자동 사이닝에 실패하면 프로젝트에서 **General > Identity > Bundle Identifier** 의 값이 유니크 값인지 확인하세요.
           <br>
           ![Check the app's Bundle ID](/images/setup/xcode-unique-bundle-id.png)
 
- 1. Start your app by running `flutter run`.
-
-[differences between Apple membership types]: https://developer.apple.com/support/compare-memberships
+ 1. `flutter run` 명령어로 앱을 실행하세요.
