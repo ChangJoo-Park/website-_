@@ -1,54 +1,42 @@
-## Get the Flutter SDK
+## Flutter SDK 내려받기
 
- 1. Download the following installation bundle to get the latest beta release of the
-    Flutter SDK:
+ 1. 아래에서 가장 최신에 릴리즈된 Flutter SDK를 내려받으세요.
 
     [(loading...)](#){:.download-latest-link-{{os}}.btn.btn-primary}
 
-    For other release channels, and older builds, see the [SDK
-    archive](/docs/development/tools/sdk/archive) page.
- 1. Extract the zip file and place the contained `flutter` in the desired
-    installation location for the Flutter SDK (eg. `C:\src\flutter`; do not
-    install Flutter in a directory like `C:\Program Files\` that requires
-    elevated privileges).
- 1. Locate the file `flutter_console.bat` inside the `flutter` directory. Start
-    it by double-clicking.
+    다른 릴리즈 버전이나 이전 버전 빌드를 받으려면 [SDKarchive](/docs/development/tools/sdk/archive) 페이지를 방문하세요.
 
-You are now ready to run Flutter commands in the Flutter Console!
+ 1. 원하는 위치에 `flutter` 라는 디렉터리 이름으로 zip 파일을 압축을 푸세요. 
+    (예: `C:\src\flutter`; `C:\Program Files\`에는 맞지 않습니다.)
 
-To update an existing version of Flutter, see [Upgrading Flutter](/docs/development/tools/sdk/upgrading).
+ 1. `flutter` 디렉터리 안에 있는 `flutter_console.bat` 파일을 실행하세요.
 
-### Update your path
+Flutter 커맨드를 Flutter 콘솔에서 사용할 준비가 끝났습니다!
 
-If you wish to run Flutter commands in the regular Windows console, take
-these steps to add Flutter to the `PATH` environment variable:
+현재 사용중인 버전을 업데이트하려면, [Flutter 업그레이드](/docs/development/tools/sdk/upgrading)를 참조하세요.
 
-* From the Start search bar, type 'env' and select **Edit environment
-  variables for your account**
-* Under **User variables** check if there is an entry called **Path**:
-  * If the entry does exist, append the full path to `flutter\bin` using `;` as
-    a separator from existing values.
-  * If the entry does not exist, create a new user variable named `Path` with
-    the full path to `flutter\bin` as its value.
+### 경로 업데이트
 
-Note that you will have to close and reopen any existing console windows 
-for these changes to take effect.  
+보통의 다른 윈도우 터미널에서 Flutter 명령어를 사용하려면 `PATH` 환경변수에 Flutter를 추가하세요
 
-### Run `flutter doctor`
+* 시작 버튼의 검색창에서 '환경'를 입력하고 **시스템 환경변수 편집** 을 선택하세요.
+* **사용자 변수** 에서 **Path** 를 선택하세요:
+  * Path가 있으면 전체 내용의 끝에 `;`과 함께 전체 경로의 `flutter\bin`을 추가하세요.
+  * `Path`가 없으면 새로 만든 후 전체 경로의 `flutter\bin` 를 입력하세요.
 
-From a console window which has the Flutter directory in the path (see above), 
-run the following command to see if there are any platform dependencies you 
-need to complete the setup:
+위 변경사항을 적용하려면 기존 명령 프롬프트 등을 닫은 후 다시 열어야 합니다.
+
+### `flutter doctor` 실행하기
+
+터미널에서 Flutter SDK 경로로 들어가 아래 명령어를 실행하여 설치에 필요한 의존성을 확인합니다.
 
 ```console
 C:\src\flutter>flutter doctor
 ```
 
-This command checks your environment and displays a report of the status of your
-Flutter installation. Check the output carefully for other software you may need 
-to install or further tasks to perform (shown in **bold** text).
+이 명령어는 현재 환경에서 Flutter 설치 상태 리포트를 보여줍니다. 추가로 설치할 소프트웨어가 있는지 확인하고 추가 작업을 해야합니다. (**굵은** 텍스트 참조).
 
-For example:
+사용 예:
 
 <pre>
 [-] Android toolchain - develop for Android devices
@@ -58,8 +46,6 @@ For example:
       visit https://flutter.io/setup/#android-setup for detailed instructions.
 </pre>
 
-The following sections describe how to perform these tasks and finish the setup
-process. Once you have installed any missing dependencies, you can run the 
-`flutter doctor` command again to verify that you’ve set everything up correctly.
+`flutter doctor` 를 이용해 설치 프로세스를 완료하는 방법을 알려줍니다. 
 
 {% include_relative _analytics.md %}
