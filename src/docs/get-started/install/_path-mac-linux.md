@@ -6,7 +6,7 @@ update this variable permanently, so you can run `flutter` commands in any termi
 
 The steps for modifying this variable permanently for all terminal sessions are machine-specific.
 Typically you add a line to a file that is executed whenever you open
-a new window. For example:
+a new window. 사용 예:
 
  1. Determine the directory where you placed the Flutter SDK. You will
     need this in Step 3.

@@ -9,7 +9,7 @@ website available at [https://flutter-io.cn](https://flutter-io.cn).
 If you’d like to install Flutter using an [installation
 bundle](/docs/development/tools/sdk/archive),
 you can replace the domain of the original URL with a trusted mirror
-to speed it up. For example:
+to speed it up. 사용 예:
 
 * Original URL:<br>
   [https://storage.googleapis.com/flutter_infra/releases/beta/windows/flutter_windows_v0.3.2-beta.zip](https://storage.googleapis.com/flutter_infra/releases/beta/windows/flutter_windows_v0.3.2-beta.zip)

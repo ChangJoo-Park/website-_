@@ -2278,7 +2278,7 @@ In addition to the Flutter analyzer, the
 [`Dart Observatory`](https://dart-lang.github.io/observatory/) is a tool used to
 profile and debug your Dart applications. If you started your application using
 `flutter run` in Terminal, you can open the web page at the Observatory URL
-printed to the terminal window, for example:  `http://127.0.0.1:8100/`.
+printed to the terminal window, 사용 예:  `http://127.0.0.1:8100/`.
 
 The Observatory includes support for profiling, examining the heap, observing
 executed lines of code, debugging memory leaks and memory fragmentation. For

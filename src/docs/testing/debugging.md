@@ -697,7 +697,7 @@ I/flutter :    └SemanticsNode(4; Rect.fromLTRB(0.0, 0.0, 82.0, 36.0); canBeTap
 
 To find out where your events happen relative to the frame's begin/end, you can toggle the [`debugPrintBeginFrameBanner`](https://docs.flutter.io/flutter/scheduler/debugPrintBeginFrameBanner.html) and the [`debugPrintEndFrameBanner`](https://docs.flutter.io/flutter/scheduler/debugPrintEndFrameBanner.html) booleans to print the beginning and end of the frames to the console.
 
-For example:
+사용 예:
 
 ```
 I/flutter : ▄▄▄▄▄▄▄▄ Frame 12         30s 437.086ms ▄▄▄▄▄▄▄▄
@@ -800,7 +800,7 @@ events (captured in microseconds):
 + Time to initialize the Flutter framework.
 + Time to complete the Flutter framework initialization.
 
-For example:
+사용 예:
 
 ```
 {

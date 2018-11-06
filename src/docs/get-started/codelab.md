@@ -446,7 +446,7 @@ lazily, on demand.
               [[highlight]]if (i.isOdd) return Divider();[[/highlight]]
 
               // The syntax "i ~/ 2" divides i by 2 and returns an integer result.
-              // For example: 1, 2, 3, 4, 5 becomes 0, 1, 1, 2, 2.
+              // 사용 예: 1, 2, 3, 4, 5 becomes 0, 1, 1, 2, 2.
               // This calculates the actual number of word pairings in the ListView,
               // minus the divider widgets.
               [[highlight]]final index = i ~/ 2;[[/highlight]]

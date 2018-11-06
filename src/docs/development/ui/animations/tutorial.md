@@ -89,7 +89,7 @@ final CurvedAnimation curve =
 **Note:**
 The [Curves](https://docs.flutter.io/flutter/animation/Curves-class.html)
 class defines many commonly used curves, or you can create your own.
-For example:
+사용 예:
 
 <!-- skip -->
 {% prettify dart %}
@@ -740,7 +740,7 @@ size in production code, you'd probably use
 instead.
 </aside>
 
-Each tween manages an aspect of the animation. For example:
+Each tween manages an aspect of the animation. 사용 예:
 
 <!-- skip -->
 {% prettify dart %}

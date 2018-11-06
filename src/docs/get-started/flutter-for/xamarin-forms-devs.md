@@ -259,7 +259,7 @@ example when clicking a `FloatingActionButton`?
 To achieve this, wrap the `Text` widget in a `StatefulWidget` and
 update it when the user clicks the button.
 
-For example:
+사용 예:
 
 <!-- skip -->
 {% prettify dart %}
@@ -1258,7 +1258,7 @@ More detailed information can be found in
 
 Unlike .NET which has `resx` files, Flutter currently doesn't have a dedicated
 resources-like system for strings. At the moment, the best practice is to hold your
-copy text in a class as static fields and accessing them from there. For example:
+copy text in a class as static fields and accessing them from there. 사용 예:
 
 <!-- skip -->
 {% prettify dart %}

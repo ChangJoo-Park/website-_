@@ -193,7 +193,7 @@ final bar = foo;
 
 To be able to update `foo` and view the change after hot reload, consider
 redefining the field as `const` or using a getter to return the value, rather
-than using `final`. For example:
+than using `final`. 사용 예:
 
 <!-- skip -->
 ```dart

@@ -107,7 +107,7 @@ example when clicking a `FloatingActionButton`?
 To achieve this, wrap the `Text` widget in a `StatefulWidget` and
 update it when the user clicks the button.
 
-For example:
+사용 예:
 
 <!-- skip -->
 {% prettify dart %}
@@ -1252,7 +1252,7 @@ Widget build(BuildContext context) {
 
 Flutter currently doesn't have a dedicated resources-like system for strings.
 At the moment, the best practice is to hold your copy text in a class as
-static fields and accessing them from there. For example:
+static fields and accessing them from there. 사용 예:
 
 <!-- skip -->
 {% prettify dart %}

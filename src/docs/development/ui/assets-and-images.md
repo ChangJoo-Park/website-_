@@ -134,7 +134,7 @@ asset, for example a JSON file, from the app's runtime `rootBundle`.
 
 Outside of a Widget context, or when a handle to an AssetBundle is not
 available, you can use `rootBundle` to directly load such assets,
-for example:
+사용 예:
 
 ```dart
 import 'dart:async' show Future;

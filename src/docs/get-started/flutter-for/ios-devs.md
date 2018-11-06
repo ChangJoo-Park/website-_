@@ -109,7 +109,7 @@ when clicking a `FloatingActionButton`?
 To achieve this, wrap the `Text` widget in a `StatefulWidget` and
 update it when the user clicks the button.
 
-For example:
+사용 예:
 
 <!-- skip -->
 {% prettify dart %}
@@ -1094,7 +1094,7 @@ For more details, see
 Unlike iOS, which has the `Localizable.strings` file, Flutter doesn't
 currently have a dedicated system for handling strings. At the moment, the
 best practice is to declare your copy text in a class as static fields and
-access them from there. For example:
+access them from there. 사용 예:
 
 <!-- skip -->
 {% prettify dart %}

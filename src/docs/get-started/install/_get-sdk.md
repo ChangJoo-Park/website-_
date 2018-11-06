@@ -15,7 +15,7 @@
 
     For other release channels, and older builds, see the [SDK
     archive](/docs/development/tools/sdk/archive) page.
- 1. Extract the file in the desired location, for example:
+ 1. Extract the file in the desired location, 사용 예:
 
     {% comment %}
       Our JS also updates the filename in this template, but it doesn't include the terminal formatting:
@@ -59,7 +59,7 @@ window. The Dart SDK is bundled with Flutter; it is not necessary to install
 Dart separately. Check the output carefully for other software you may need to
 install or further tasks to perform (shown in **bold** text).
 
-For example:
+사용 예:
 
 <pre>
 [-] Android toolchain - develop for Android devices

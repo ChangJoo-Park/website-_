@@ -87,7 +87,7 @@ this is interpreted as `plugin1: any`, i.e. any version of the package may be
 used. To ensure your app does not break when a package is updated,
 we recommend specifying a version range using one of the following formats:
 
-* Range constraints: Specify a minimum and maximim version. For example:
+* Range constraints: Specify a minimum and maximim version. 사용 예:
 
   ```
   dependencies:
@@ -151,7 +151,7 @@ additional dependency options are avaialble:
 
 * **Git** dependency on a package in a folder: By default Pub assumes the
   package is located in the root of the Git repository. If that is not the
-  case, you can specify the location with the `path` argument. For example:
+  case, you can specify the location with the `path` argument. 사용 예:
   ```
   dependencies:
     package1:
