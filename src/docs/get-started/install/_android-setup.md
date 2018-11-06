@@ -1,9 +1,9 @@
 ## 안드로이드 설치하기
 
 {{site.alert.note}}
-  Flutter relies on a full installation of Android Studio to supply
-  its Android platform dependencies. However, you can write your
-  Flutter apps in a number of editors; a later step will discuss that.
+  Flutter는 안드로이드 스튜디오의 전체 설치된 버전에 의존합니다. 
+  그러나 여러 다른 에디터에서도 Flutter 앱을 개발할 수 있습니다. 
+  나중에 이를 알아보겠습니다.
 {{site.alert.end}}
 
 ### 안드로이드 스튜디오 설치하기
